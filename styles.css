@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.head-text{
+    display: flex;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: black;
+    padding: 8px 0 8px 0;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+#header-lower{
+    font-size: 1.3rem;
+}
+
+button{
+    position: relative;
+    margin: auto 2rem auto auto;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.resumebtn{
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 0 4px 4px 4px;
+}
+button a{
+    text-decoration: none;
+}
+button a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6vh auto 16vh auto;
+}
+.first-name{
+    width: 100%;
+    font-size: 16vw;
+    color: white;
+    text-align: center;
+}
+.mid-bar{
+    width: 50vw;
+    background-color: white;
+    height: 3.8rem;
+    text-align: center;
+    border-radius: 2rem;
+    font-size: 3em;
+}
+.last-name{
+    width: 100%;
+    font-size: 16vw;
+    color: white;
+    text-align: center;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 40vw);
+}
+.img-container p{
+    width: auto;
+    color: black;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1.5rem;
+    background-color: white;
+}
+
+.about-bar{
+    width: 100%;
+    padding: 8rem 0 1rem 0;
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+    margin: auto;
+}
+.contact-bar{
+    width: 100%;
+    padding: 1rem 0 4rem 0;
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+    margin: auto;
+}
+footer{
+    border-top: white 2px solid;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
