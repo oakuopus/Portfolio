@@ -1,0 +1,24 @@
+body {
+  background-color: #202426;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  background-color: #F2F2F2;
+  justify-content: space-between;
+}
+header .head-text {
+  font-size: 1.5em;
+  margin: auto 0 auto 2vw;
+  text-align: center;
+}
+header .head-text strong {
+  font-size: 1.8rem;
+}
+header resume-btn-container {
+  margin: auto 2vw auto 0;
+  font-size: 1.2em;
+}/*# sourceMappingURL=styles.css.map */
