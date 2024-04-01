@@ -1,0 +1,76 @@
+$color: (
+    'primary': #6C733D,
+    'secondary': #202426,
+    'white': #F2F2F2,
+);
+@function color($name){
+    @return map-get($map: $color, $key: $name)
+};
+
+$main-font: "";
+
+@font-face {
+    font-family: main;
+    src: url($main-font);
+}
+body{
+    background-color: color("primary");
+    margin: 0;
+}
+header{
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    background-color: color("primary");
+    color: color("white");
+    justify-content: end;
+    .resume-btn-container{
+        display: flex;
+        margin: auto 2vw auto 0;
+        font-size: 1.2em;
+        button{
+            outline: none;
+            padding: 8px 1vw 8px 1vw;
+            font-size: 1.1em;
+            background-color: color("secondary");
+            color: color("white");
+            border: color("primary") 2px solid;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            &:link{
+                text-decoration: none;
+                color: color("secondary");
+            }
+            &:visited{
+                text-decoration: none;
+            }
+            a{
+                text-decoration: none;
+                color: color("secondary");
+            }
+        }
+    }
+}
+main{
+    background-color: color("primary");
+    display: flex;
+    text-align: center;
+    .center{
+        margin: 10vh 0 10vh 0;
+        width: 100%;
+        height: auto;
+        background-color: color("primary");
+        color: color("secondary");
+        .first-name{
+            font-size: 12vw;
+        }
+        .mid-bar{
+            font-size: 3vw;
+        }
+        .last-name{
+            font-size: 12vw;
+        }
+    }
+}
