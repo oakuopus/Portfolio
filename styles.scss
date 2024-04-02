@@ -87,10 +87,13 @@ main{
         display: flex;
         .scroller{
             height: 28rem;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
             .certification{
                 width: 20vw;
                 height: 24rem;
-                background-color: color("primary");
+                background-color: color("secondary");
                 color: white("white");
             }
             #cert-img1{
