@@ -81,20 +81,22 @@ main{
         display: flex;
         margin: auto;
         width: 100%;
-        height: 30rem;
+        height: auto;
         background-color: color("secondary");
         flex-direction: column;
         display: flex;
         .scroller{
-            height: 28rem;
+            height: auto;
             display: flex;
             justify-content: space-between;
             margin: auto;
+            gap: 6vw;
+            padding: 2vh 0 2vh 0;
             .certification{
-                width: 20vw;
-                height: 24rem;
-                background-color: color("secondary");
-                color: white("white");
+                width: 24vw;
+                height: 35rem;
+                background-color: color("white");
+                color: white("secondary");
             }
             #cert-img1{
 
