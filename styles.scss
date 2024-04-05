@@ -1,6 +1,5 @@
 $color: (
-    'primary': #6C733D,
-    'secondary': #202426,
+    'black': #202426,
     'white': #F2F2F2,
 );
 @function color($name){
@@ -14,99 +13,138 @@ $main-font: "";
     src: url($main-font);
 }
 body{
-    background-color: color("primary");
     margin: 0;
-}
-header{
-    display: flex;
-    height: 5rem;
-    width: 100%;
-    background-color: color("primary");
-    color: color("white");
-    justify-content: end;
-    .resume-btn-container{
+    height: 100%;
+    background-image: linear-gradient(#027F0F,#3E4D3F);
+    header{
         display: flex;
-        margin: auto 2vw auto 0;
-        font-size: 1.2em;
-        #resumebtn{
-            outline: none;
-            padding: 8px 1vw 8px 1vw;
-            font-size: 1.1em;
-            background-color: color("secondary");
-            color: color("white");
-            border: color("primary") 2px solid;
-            transition: 1s;
-            &:hover{
-                transform: scale(1.1);
-            }
-            &:link{
-                text-decoration: none;
-                color: color("primary");
-            }
-            &:visited{
-                text-decoration: none;
-            }
-            a{
-                text-decoration: none;
-                color: color("primary");
-            }
-        }
-    }
-}
-main{
-    background-color: color("primary");
-    text-align: center;
-    .center{
-        margin: 12vh 0 22vh 0;
+        height: 5rem;
         width: 100%;
-        height: auto;
-        background-color: color("primary");
-        color: color("secondary");
-        .first-name{
-            font-size: 12vw;
-        }
-        .mid-bar{
-            font-size: 3vw;
-            color: color("primary");
-            border-radius: 2rem;
-            background-color: color("secondary");
-            width: 50vw;
-            margin: auto;
-        }
-        .last-name{
-            font-size: 12vw;
-        }
-    }
-    .certs-container{
-        display: flex;
-        margin: auto;
-        width: 100%;
-        height: auto;
-        background-color: color("secondary");
-        flex-direction: column;
-        display: flex;
-        .scroller{
-            height: auto;
+        color: color("white");
+        justify-content: end;
+        .resume-btn-container{
             display: flex;
-            justify-content: space-between;
-            margin: auto;
-            gap: 6vw;
-            padding: 2vh 0 2vh 0;
-            .certification{
-                width: 24vw;
-                height: 35rem;
-                background-color: color("white");
-                color: white("secondary");
-            }
-            #cert-img1{
-
-            }
-            #cert-img2{
-                
-            }
-            #cert-img3{
-                
+            margin: auto 2vw auto 0;
+            font-size: 1.2em;
+            #resumebtn{
+                outline: none;
+                padding: 8px 1vw 8px 1vw;
+                font-size: 1.1em;
+                background-color: color("black");
+                color: color("white");
+                border: color("white") 2px solid;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                &:link{
+                    text-decoration: none;
+                    color: color("white");
+                }
+                &:visited{
+                    text-decoration: none;
+                }
+                a{
+                    text-decoration: none;
+                    color: color("white");
+                }
             }
         }
+    }
+    main{
+        text-align: center;
+        .center{
+            margin: 3vh 0 30vh 0;
+            width: 100%;
+            height: auto;
+            color: color("black");
+            .first-name{
+                font-size: 16vw;
+                letter-spacing: 3px;
+                height: 17vw;
+                padding: 0;
+                align-items: center;
+            }
+            .mid-bar{
+                font-size: 2.8vw;
+                color: color("black");
+                border-radius: 2rem;
+                background-color: beige;
+                width: 45vw;
+                margin: auto;
+                padding-bottom: 4px;
+            }
+            .last-name{
+                font-size: 16vw;
+                letter-spacing: 2px;
+                height: 17vw;
+                padding: 0;
+                align-items: center;
+            }
+        }
+        .certs-container{
+            display: flex;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            display: flex;
+            .scroller{
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                gap: 6vw;
+                padding: 18vh 0 18vh 0;
+                .certification{
+                    width: 26vw;
+                    height: 34vw;
+                    background-color: color("black");
+                    color: color("white");
+                }
+                #cert-img1{
+
+                }
+                #cert-img2{
+                    
+                }
+                #cert-img3{
+                    
+                }
+            }
+        }
+        .info-sector{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            margin: 14vh 0 12vh 0;
+            .info-bars{
+                transition: .5s;
+                display: flex;
+                height: 14vh;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 8vh;
+                padding: 3vh 0 3vh 0;
+                &:hover{
+                    background-color: #202426;
+                }
+                #work{
+
+                }
+                #about{
+
+                }
+                #contact{
+
+                }
+            }
+        }
+    }
+    footer{
+        display: flex;
+        color: color("white");
+        border-top: white;
     }
 }
