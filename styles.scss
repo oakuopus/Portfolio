@@ -1,6 +1,6 @@
 $color: (
-    'black': #202426,
-    'white': #F2F2F2,
+    'black': #1B1B1B,
+    'white': beige,
 );
 @function color($name){
     @return map-get($map: $color, $key: $name)
@@ -12,10 +12,11 @@ $main-font: "";
     font-family: main;
     src: url($main-font);
 }
+
 body{
     margin: 0;
     height: 100%;
-    background-image: linear-gradient(#027F0F,#3E4D3F);
+    background-image: linear-gradient(#00610d,#1e4d2b);
     header{
         display: flex;
         height: 5rem;
@@ -24,18 +25,25 @@ body{
         justify-content: end;
         .resume-btn-container{
             display: flex;
-            margin: auto 2vw auto 0;
+            margin: auto 25px auto 0;
             font-size: 1.2em;
             #resumebtn{
                 outline: none;
-                padding: 8px 1vw 8px 1vw;
+                padding: 8px 0 8px 0;
                 font-size: 1.1em;
                 background-color: color("black");
                 color: color("white");
                 border: color("white") 2px solid;
                 transition: 1s;
+                width: auto;
+                cursor: pointer;
                 &:hover{
-                    transform: scale(1.1);
+                    background-color: color("white");
+                    border: black 3px solid;
+                    outline: none;
+                    animation-name: shake;
+                    animation-duration: 1s;
+                    animation-iteration-count: infinite;
                 }
                 &:link{
                     text-decoration: none;
@@ -45,8 +53,12 @@ body{
                     text-decoration: none;
                 }
                 a{
+                    padding: 2vh 1vw 2vh 1vw;
                     text-decoration: none;
                     color: color("white");
+                    &:hover{
+                        color: color("black");
+                    }
                 }
             }
         }
@@ -54,12 +66,12 @@ body{
     main{
         text-align: center;
         .center{
-            margin: 3vh 0 30vh 0;
+            margin: 4vh 0 30vh 0;
             width: 100%;
             height: auto;
             color: color("black");
             .first-name{
-                font-size: 16vw;
+                font-size: 15vw;
                 letter-spacing: 3px;
                 height: 17vw;
                 padding: 0;
@@ -69,13 +81,13 @@ body{
                 font-size: 2.8vw;
                 color: color("black");
                 border-radius: 2rem;
-                background-color: beige;
+                background-color: white;
                 width: 45vw;
                 margin: auto;
                 padding-bottom: 4px;
             }
             .last-name{
-                font-size: 16vw;
+                font-size: 15vw;
                 letter-spacing: 2px;
                 height: 17vw;
                 padding: 0;
@@ -113,38 +125,65 @@ body{
                 }
             }
         }
-        .info-sector{
+        .accordion{
             display: flex;
             flex-direction: column;
             height: auto;
-            margin: 14vh 0 12vh 0;
-            .info-bars{
-                transition: .5s;
+            margin: 14vh 0 24vh 0;
+            .accordion-item{
+                transition: 1s;
                 display: flex;
-                height: 14vh;
+                height: 18vh;
+                margin: 0;
                 width: 100%;
                 justify-content: center;
-                align-items: center;
-                font-size: 8vh;
-                padding: 3vh 0 3vh 0;
+                cursor: pointer;
+                flex-direction: column;
+                align-content: center;
                 &:hover{
                     background-color: #202426;
+                    color: color("white");
                 }
-                #work{
-
+                .item-header{
+                    display: flex;
+                    font-size: 4vw;
+                    height: auto;
+                    margin-top: 3vh;
+                    .title{
+                        height: auto;
+                        margin: 0 auto 0 auto;
+                    }
                 }
-                #about{
-
+                .text{
+                    font-size: 1vw;
+                    padding: 0 6px;
+                    max-height: 0;
+                    overflow: hidden;
                 }
-                #contact{
-
+                &:active{
+                    .text{
+                        max-height: 600px;
+                        transition: .5s linear;
+                    }
                 }
             }
         }
     }
     footer{
         display: flex;
-        color: color("white");
-        border-top: white;
+        color: beige;
+        font-size: 1em;
+        .footer-txt{
+            padding: 1rem;
+            margin: auto;
+        }
     }
 }
+
+@keyframes shake{
+    25% { transform: translate(1px, 1px) rotate(1deg); }
+    50% { transform: translate(-1px, -1px) rotate(-1deg); }
+    75% { transform: translate(1px, 1px) rotate(1deg); }
+    100% { transform: translate(-1px, -1px) rotate(-1deg); }
+}
+
