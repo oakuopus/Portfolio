@@ -14,29 +14,33 @@ $main-font: "";
 }
 
 body{
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0;
     height: 100%;
     background-image: linear-gradient(#00570c,#1e4d2b);
     header{
-        position: absolute;
+        position: fixed;
         display: flex;
-        height: auto;
+        height: 6vh;
         width: 100%;
         color: color("white");
         justify-content: end;
+        transition: 1s;
         .resume-btn-container{
             display: flex;
-            margin: 1rem 1rem auto 0;
+            margin: 1rem 1rem 1rem 1rem;
             font-size: 1.2em;
             #resumebtn{
                 outline: none;
+                align-content: center;
+                margin: auto;
                 font-size: 1.1em;
                 background-color: color("black");
                 color: color("white");
                 border: color("white") 2px solid;
                 transition: 1s;
                 width: auto;
-                height: auto;
                 cursor: pointer;
                 padding: 6px 12px 6px 12px;
                 &:hover{
@@ -67,7 +71,7 @@ body{
     main{
         height: 100%;
         text-align: center;
-        padding-top: 3.5rem;
+        padding-top: 7vh;
         .center{
             margin: 0 auto 3vw auto;
             width: 100%;
@@ -81,12 +85,12 @@ body{
                 align-items: center;
             }
             .mid-bar{
-                font-size: 2.8em;
+                font-size: 3em;
                 color: color("black");
                 border-radius: 2rem;
                 background-color: white;
-                width: 45rem;
-                padding: 0;
+                width: 50rem;
+                padding: 0 0 4px 0;
                 margin: auto;
             }
             .last-name{
@@ -133,32 +137,48 @@ body{
             flex-direction: column;
             height: auto;
             margin: 14vh 0 24vh 0;
-            .accordion-item {
+            .accordion-items {
                 transition: 1s;
                 display: flex;
-                height: 18vh;
+                height: auto;
                 margin: 0;
                 width: 100%;
                 justify-content: center;
                 cursor: pointer;
                 flex-direction: column;
                 align-content: center;
-                &:hover {
-                    background-color: #202426;
-                    color: white;
-                }
                 .item-header {
                     display: flex;
                     font-size: 4vw;
                     height: auto;
-                    .title {
-                        height: auto;
-                        margin: 0 auto 0 auto;
+                    background-color: transparent;
+                    border: none;
+                    width: auto;
+                    justify-content: center;
+                    color: color("black");
+                    &:hover {
+                        background-color: color("black");
+                        color: white;
                     }
                 }
                 .text {
-                    font-size: 1vw;
-                    padding: 0 6px;
+                    font-size: 2em;
+                    background-color: color("black");
+                    color: color("white");
+                    border: none;
+                    display: flex;
+                    height: auto;
+                }
+                .about-info{
+                    flex-direction: row;
+                    height: auto;
+                    img{
+                        width: 40vw;
+                        height: 40vw;
+                    }
+                    span{
+                        height: 40vw;
+                    }
                 }
             }
         }
