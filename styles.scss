@@ -16,27 +16,29 @@ $main-font: "";
 body{
     margin: 0;
     height: 100%;
-    background-image: linear-gradient(#00610d,#1e4d2b);
+    background-image: linear-gradient(#00570c,#1e4d2b);
     header{
+        position: absolute;
         display: flex;
-        height: 5rem;
+        height: auto;
         width: 100%;
         color: color("white");
         justify-content: end;
         .resume-btn-container{
             display: flex;
-            margin: auto 25px auto 0;
+            margin: 1rem 1rem auto 0;
             font-size: 1.2em;
             #resumebtn{
                 outline: none;
-                padding: 8px 0 8px 0;
                 font-size: 1.1em;
                 background-color: color("black");
                 color: color("white");
                 border: color("white") 2px solid;
                 transition: 1s;
                 width: auto;
+                height: auto;
                 cursor: pointer;
+                padding: 6px 12px 6px 12px;
                 &:hover{
                     background-color: color("white");
                     border: black 3px solid;
@@ -52,8 +54,7 @@ body{
                 &:visited{
                     text-decoration: none;
                 }
-                a{
-                    padding: 2vh 1vw 2vh 1vw;
+                a{  
                     text-decoration: none;
                     color: color("white");
                     &:hover{
@@ -64,32 +65,34 @@ body{
         }
     }
     main{
+        height: 100%;
         text-align: center;
+        padding-top: 3.5rem;
         .center{
-            margin: 4vh 0 30vh 0;
+            margin: 0 auto 3vw auto;
             width: 100%;
             height: auto;
             color: color("black");
             .first-name{
-                font-size: 15vw;
+                font-size: 32vh;
                 letter-spacing: 3px;
-                height: 17vw;
+                height: auto;
                 padding: 0;
                 align-items: center;
             }
             .mid-bar{
-                font-size: 2.8vw;
+                font-size: 2.8em;
                 color: color("black");
                 border-radius: 2rem;
                 background-color: white;
-                width: 45vw;
+                width: 45rem;
+                padding: 0;
                 margin: auto;
-                padding-bottom: 4px;
             }
             .last-name{
-                font-size: 15vw;
+                font-size: 32vh;
                 letter-spacing: 2px;
-                height: 17vw;
+                height: auto;
                 padding: 0;
                 align-items: center;
             }
@@ -125,12 +128,12 @@ body{
                 }
             }
         }
-        .accordion{
+        .accordion {
             display: flex;
             flex-direction: column;
             height: auto;
             margin: 14vh 0 24vh 0;
-            .accordion-item{
+            .accordion-item {
                 transition: 1s;
                 display: flex;
                 height: 18vh;
@@ -140,41 +143,35 @@ body{
                 cursor: pointer;
                 flex-direction: column;
                 align-content: center;
-                &:hover{
+                &:hover {
                     background-color: #202426;
-                    color: color("white");
+                    color: white;
                 }
-                .item-header{
+                .item-header {
                     display: flex;
                     font-size: 4vw;
                     height: auto;
-                    margin-top: 3vh;
-                    .title{
+                    .title {
                         height: auto;
                         margin: 0 auto 0 auto;
                     }
                 }
-                .text{
+                .text {
                     font-size: 1vw;
                     padding: 0 6px;
-                    max-height: 0;
-                    overflow: hidden;
-                }
-                &:active{
-                    .text{
-                        max-height: 600px;
-                        transition: .5s linear;
-                    }
                 }
             }
         }
+        
     }
     footer{
         display: flex;
-        color: beige;
+        color: color("white");
         font-size: 1em;
+        border-top: solid color("white") 1px;
+        margin-top: 4vh;
         .footer-txt{
-            padding: 1rem;
+            padding: 8px;
             margin: auto;
         }
     }

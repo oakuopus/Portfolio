@@ -1,6 +1,6 @@
-$(function(){
-    $(".item-header").click(function(){
-        $(".accordian-item").removeClass("active")
-        $(this).parent().addClass("active")
+$( function() {
+    $( ".item-header" ).accordion({
+        active: false
     });
+    
 });
