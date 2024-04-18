@@ -18,11 +18,11 @@ body{
     overflow-x: hidden;
     margin: 0;
     height: 100%;
-    background-image: linear-gradient(#00570c,#1e4d2b);
+    background-image: linear-gradient(#00572e,#1e4d2b);
     header{
         position: fixed;
         display: flex;
-        height: 6vh;
+        height: 5rem;
         width: 100%;
         color: color("white");
         justify-content: end;
@@ -151,33 +151,72 @@ body{
                     display: flex;
                     font-size: 4vw;
                     height: auto;
-                    background-color: transparent;
                     border: none;
                     width: auto;
                     justify-content: center;
-                    color: color("black");
+                    margin: 0;
+                    padding: 2rem 0 2rem 0;
                     &:hover {
                         background-color: color("black");
                         color: white;
                     }
                 }
                 .text {
-                    font-size: 2em;
+                    font-size: 2vw;
                     background-color: color("black");
                     color: color("white");
-                    border: none;
                     display: flex;
-                    height: auto;
+                    margin: 0;
                 }
                 .about-info{
+                    font-size: 2vw;
+                    background-color: color("black");
+                    color: color("white");
+                    display: flex;
+                    margin: 0;
                     flex-direction: row;
-                    height: auto;
+                    margin: auto;
+                    justify-content: space-between;
+                    width: 100%;
                     img{
-                        width: 40vw;
-                        height: 40vw;
+                        width: 30vw;
+                        height: 30vw;
+                        margin-left: 10vw;
                     }
                     span{
-                        height: 40vw;
+                        height: 32vw;
+                        width: 40vw;
+                        margin-right: 10vw;
+                        align-content: center;
+                        border-top: solid 1px color("white");
+                    }
+                }
+                .contact-info{
+                    justify-content: center;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-top: color("white") 1px solid;
+                    #github{
+                        margin-left: 10rem;
+                    }
+                    #email{
+                        margin-right: 10rem;
+                    }
+                }
+                .work-info{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1rem 4rem 0 4rem;
+                    border-top: color("white") 1px solid;
+                    span{
+                        height: 28vw;
+                        a{
+                            text-decoration: none;
+                            img{
+                                height: 18vw;
+                                width: 28vw;
+                            }
+                        }
                     }
                 }
             }
@@ -196,6 +235,12 @@ body{
         }
     }
 }
+
+.dropped{
+    background-color: color("black");
+    color: color("white");
+}
+
 
 @keyframes shake{
     25% { transform: translate(1px, 1px) rotate(1deg); }
