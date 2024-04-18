@@ -4,7 +4,7 @@ $( function() {
         active: true,
         icons: false
     }); 
-    $('.about-info').css('height', '32vw');
+    $('.about-info').css('height', '26vw');
     $('.contact-info').css('height', '4vh');
     $('.work-info').css('height', '20vw');
     $(".item-header").on("click", function(){
