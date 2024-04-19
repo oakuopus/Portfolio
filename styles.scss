@@ -32,6 +32,7 @@ body{
             margin: 1rem 1rem 1rem 1rem;
             font-size: 1.2em;
             transition: 1s;
+            padding: 0 2px 0 2px;
             &:hover{
                 border: color("white") 1px solid;
                 background-color: color("black");
@@ -80,29 +81,42 @@ body{
         height: 100%;
         text-align: center;
         padding-top: 7vh;
+        z-index: 10;
         .center{
             margin: 0 auto 3vw auto;
             width: 100%;
             height: auto;
             color: color("black");
             .first-name{
-                font-size: 32vh;
+                font-size: 32vw;
                 letter-spacing: 3px;
                 height: auto;
                 padding: 0;
                 align-items: center;
             }
             .mid-bar{
-                font-size: 3em;
+                font-size: 2.5vw;
                 color: color("black");
                 border-radius: 2rem;
                 background-color: white;
-                width: 50rem;
+                width: 55vw;
                 padding: 0 0 4px 0;
                 margin: auto;
+                flex-direction: row;
+                display: flex;
+                justify-content: space-between;
+                z-index: 5;
+                div{
+                    display: inline-block;
+                    text-transform: uppercase;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    animation: scroller 8s linear infinite ;
+                    z-index: 6;
+                }
             }
             .last-name{
-                font-size: 32vh;
+                font-size: 32vw;
                 letter-spacing: 2px;
                 height: auto;
                 padding: 0;
@@ -255,4 +269,14 @@ body{
     50% { transform: translate(-1px, -1px) rotate(-1deg); }
     75% { transform: translate(1px, 1px) rotate(1deg); }
     100% { transform: translate(-1px, -1px) rotate(-1deg); }
+}
+@keyframes scroller{
+    100%{
+        transform: translate(-100%, 0%);
+    }
+}
+@media (orientation: portrait) {
+    main{
+        padding-top: 20vh;
+    }
 }
