@@ -6,7 +6,7 @@ $( function() {
     }); 
     $('.about-info').css('height', '26vw');
     $('.contact-info').css('height', '4vh');
-    $('.work-info').css('height', '20vw');
+    $('.work-info').css('height', '34vw');
     $(".item-header").on("click", function(){
         $(this).toggleClass("dropped").siblings().removeClass("dropped");
 
@@ -29,8 +29,8 @@ $( function() {
         loop: true, 
 
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     })
 });
