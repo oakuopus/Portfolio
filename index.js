@@ -4,8 +4,8 @@ $( function() {
         active: true,
         icons: false
     }); 
-    $('.about-info').css('height', '26vw');
-    $('.contact-info').css('height', '4vh');
+    $('.about-info').css('height', '27vw');
+    $('.contact-info').css('height', '8vw');
     $('.work-info').css('height', '34vw');
     $(".item-header").on("click", function(){
         $(this).toggleClass("dropped").siblings().removeClass("dropped");
