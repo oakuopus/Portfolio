@@ -1,0 +1,431 @@
+@font-face {
+  font-family: skatone;
+  src: url(/skatone/Skatone.ttf);
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  height: 100%;
+  background-image: linear-gradient(#00572e, #1e4d2b);
+}
+body a img {
+  display: flex;
+  margin: auto;
+  padding: 6vh 0 13vh 0;
+}
+body #download {
+  position: absolute;
+  top: 88vh;
+  left: 44%;
+  font-size: 2em;
+  cursor: pointer;
+}
+body #download:hover {
+  background-color: #1B1B1B;
+  color: beige;
+  box-shadow: beige 2px 2px 4px;
+}
+body header {
+  position: fixed;
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  color: beige;
+  justify-content: end;
+  z-index: 100;
+  transition: 1s;
+}
+body header .resume-btn-container {
+  display: flex;
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 1.2em;
+  transition: 1s;
+  padding: 0 2px 0 2px;
+  z-index: 1000000;
+}
+body header .resume-btn-container:hover {
+  border: beige 1px solid;
+  background-color: #1B1B1B;
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+body header .resume-btn-container #resumebtn {
+  outline: none;
+  align-content: center;
+  margin: auto;
+  font-size: 1.1em;
+  background-color: #1B1B1B;
+  color: beige;
+  border: beige 2px solid;
+  transition: 1s;
+  width: auto;
+  cursor: pointer;
+  padding: 6px 0 6px 0;
+  z-index: 1000000000;
+}
+body header .resume-btn-container #resumebtn:hover {
+  background-color: white;
+  border: black 3px solid;
+  outline: none;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-weight: 700;
+}
+body header .resume-btn-container #resumebtn:link {
+  text-decoration: none;
+  color: beige;
+}
+body header .resume-btn-container #resumebtn:visited {
+  text-decoration: none;
+}
+body header .resume-btn-container #resumebtn a {
+  text-decoration: none;
+  color: beige;
+  padding: 10px 1rem 10px 1rem;
+}
+body header .resume-btn-container #resumebtn a:hover {
+  color: #1B1B1B;
+}
+body main {
+  height: 100%;
+  text-align: center;
+  padding-top: 18vh;
+  z-index: 10;
+}
+body main .center {
+  margin: 0 auto 6vw auto;
+  width: 100%;
+  height: auto;
+  color: #1B1B1B;
+}
+body main .center .first-name {
+  font-size: 29vh;
+  letter-spacing: 3px;
+  height: auto;
+  padding: 0;
+  align-items: center;
+  font-family: skatone;
+}
+body main .center .mid-bar {
+  font-size: 4vh;
+  color: #1B1B1B;
+  border-radius: 2rem;
+  background-color: white;
+  width: 50vw;
+  padding: 1px 0 1vh 0;
+  margin: auto;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+  overflow: hidden;
+}
+body main .center .mid-bar div {
+  display: inline-block;
+  text-transform: uppercase;
+  white-space: nowrap;
+  animation: scroller 12s linear infinite;
+  letter-spacing: 2px;
+  font-family: skatone;
+}
+body main .center .last-name {
+  font-size: 29vh;
+  letter-spacing: 2px;
+  height: auto;
+  padding: 0;
+  align-items: center;
+  font-family: skatone;
+}
+body main .swiper {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 60vh;
+  flex-direction: column;
+  display: flex;
+  padding: 18vh 0 18vh 0;
+}
+body main .swiper .swiper-wrapper {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+body main .swiper .swiper-wrapper img {
+  width: 30vw !important;
+  height: 40vw;
+}
+body main .swiper .swiper-wrapper :nth-child(1) {
+  padding: 0 30vw 0 30vw;
+}
+body main .swiper .swiper-wrapper :nth-child(2) {
+  padding: 0 30vw 0 40vw;
+}
+body main .swiper .swiper-wrapper :nth-child(3) {
+  padding: 0 30vw 0 40vw;
+}
+body main .accordion {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 30vh 0 24vh 0;
+  font-family: skatone;
+}
+body main .accordion .accordion-items {
+  transition: 1s;
+  display: flex;
+  height: auto;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+  flex-direction: column;
+  align-content: center;
+  font-weight: 600;
+}
+body main .accordion .accordion-items .item-header {
+  display: flex;
+  font-size: 4vw;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  margin: 0;
+  padding: 3rem 0 3rem 0;
+}
+body main .accordion .accordion-items .item-header:hover {
+  background-color: #1B1B1B;
+  color: white;
+}
+body main .accordion .accordion-items .text {
+  font-size: 2vw;
+  background-color: #1B1B1B;
+  color: beige;
+  display: flex;
+  margin: 0;
+}
+body main .accordion .accordion-items .about-info {
+  font-size: 1.6vw;
+  background-color: #1B1B1B;
+  color: beige;
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body main .accordion .accordion-items .about-info img {
+  width: 25vw;
+  height: 25vw;
+  margin-left: 6vw;
+  padding-top: 1vh;
+}
+body main .accordion .accordion-items .about-info span {
+  height: 25vw;
+  width: 50vw;
+  margin-right: 10vw;
+  align-content: center;
+  padding-top: 1vh;
+}
+body main .accordion .accordion-items .contact-info {
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5vw;
+}
+body main .accordion .accordion-items .contact-info #github {
+  margin-left: 12vw;
+}
+body main .accordion .accordion-items .contact-info #github a {
+  text-decoration: none;
+  color: beige;
+  font-weight: 200;
+}
+body main .accordion .accordion-items .contact-info #github a:active {
+  text-decoration: none;
+}
+body main .accordion .accordion-items .contact-info #github a:visited {
+  text-decoration: none;
+  color: beige;
+}
+body main .accordion .accordion-items .contact-info #email {
+  margin-right: 12vw;
+  font-weight: 200;
+}
+body main .accordion .accordion-items .work-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 0 2rem;
+}
+body main .accordion .accordion-items .work-info #calc {
+  height: 28vw;
+  width: 28vw;
+}
+body main .accordion .accordion-items .work-info #calc .border {
+  font-family: "Courier New", Courier, monospace;
+}
+body main .accordion .accordion-items .work-info #calc .border span {
+  display: block;
+  font-size: 1.7vw;
+  height: 12vw;
+}
+body main .accordion .accordion-items .work-info #calc .border a {
+  text-decoration: none;
+}
+body main .accordion .accordion-items .work-info #calc .border a img {
+  height: 18vw;
+  width: 28vw;
+}
+body main .accordion .accordion-items .work-info #calc .logos {
+  justify-content: space-between;
+  border-radius: 20%;
+  width: 26vw;
+  margin: auto;
+}
+body main .accordion .accordion-items .work-info #calc .logos img {
+  height: 3vw;
+  width: 3vw;
+}
+body main .accordion .accordion-items .work-info #js-website {
+  height: 33vw;
+  width: 28vw;
+  border-left: white 2px solid;
+  border-right: white 2px solid;
+  padding: 0 2vw 0 2vw;
+}
+body main .accordion .accordion-items .work-info #js-website .border {
+  font-family: "Courier New", Courier, monospace;
+}
+body main .accordion .accordion-items .work-info #js-website .border span {
+  display: block;
+  font-size: 1.7vw;
+  height: 12vw;
+}
+body main .accordion .accordion-items .work-info #js-website .border a {
+  text-decoration: none;
+}
+body main .accordion .accordion-items .work-info #js-website .border a img {
+  height: 18vw;
+  width: 28vw;
+}
+body main .accordion .accordion-items .work-info #js-website .logos {
+  justify-content: space-between;
+  border-radius: 20%;
+  width: 26vw;
+  margin: auto;
+}
+body main .accordion .accordion-items .work-info #js-website .logos img {
+  height: 3vw;
+  width: 3vw;
+}
+body main .accordion .accordion-items .work-info #tictactoe {
+  height: 28vw;
+  width: 28vw;
+}
+body main .accordion .accordion-items .work-info #tictactoe .border {
+  font-family: "Courier New", Courier, monospace;
+  height: 28vw;
+}
+body main .accordion .accordion-items .work-info #tictactoe .border span {
+  display: block;
+  font-size: 1.7vw;
+  height: 12vw;
+}
+body main .accordion .accordion-items .work-info #tictactoe .border a {
+  text-decoration: none;
+}
+body main .accordion .accordion-items .work-info #tictactoe .border a img {
+  height: 18vw;
+  width: 28vw;
+}
+body main .accordion .accordion-items .work-info #tictactoe .logos {
+  justify-content: space-between;
+  border-radius: 20%;
+  width: 26vw;
+  margin: auto;
+}
+body main .accordion .accordion-items .work-info #tictactoe .logos img {
+  height: 3vw;
+  width: 3vw;
+}
+body footer {
+  display: flex;
+  color: beige;
+  font-size: 1em;
+  border-top: solid beige 1px;
+  margin-top: 4vh;
+}
+body footer .footer-txt {
+  padding: 8px;
+  margin: auto;
+}
+
+.dropped {
+  background-color: #1B1B1B;
+  color: beige;
+  border-bottom: beige 2px solid;
+}
+
+@keyframes shake {
+  25% {
+    transform: translate(1px, 1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(1px, 1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+}
+@keyframes scroller {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translatex(-100%);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: scale(90%);
+  }
+  50% {
+    transform: scale(102%);
+  }
+  100% {
+    transform: scale(90%);
+  }
+}
+@media (orientation: portrait) {
+  body main {
+    padding-top: 17vh;
+  }
+  body main .center .first-name, body main .center .last-name {
+    font-size: 28vw;
+  }
+  body main .swiper {
+    padding: 10vh 0 10vh 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  body main {
+    padding-top: 30vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  body main {
+    padding-top: 36vh;
+  }
+  body main .center {
+    margin-bottom: 8vw;
+  }
+}
