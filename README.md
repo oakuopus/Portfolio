@@ -3,16 +3,16 @@
 
 Welcome to my website portfolio! This portfolio showcases my skills, projects, and experience as a programmer. Here's what you'll find:
 
-About Me
+About Me:
 Learn more about who I am, my background, and what drives my passion for programming.
 
-Projects
+Projects:
 Explore the projects I've worked on, including web development, software applications, and other programming endeavors. Each project includes a description and links to live demos or repositories.
 
-Skills
+Skills:
 Simply viewing the Website is a showcase of my frontend Skills. Explore the pages interactity and depth as you please.
 
-Contact Me
+Contact Me:
 Interested in collaborating on a project or have any questions? Reach out to me through the given contact information. 
 
 
