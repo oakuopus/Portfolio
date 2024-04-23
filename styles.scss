@@ -17,6 +17,25 @@ body{
     margin: 0;
     height: 100%;
     background-image: linear-gradient(#00572e,#1e4d2b);
+    a{
+        img{
+            display: flex;
+            margin: auto;
+            padding: 6vh 0 13vh 0;
+        }
+    }
+    #download{
+        position: absolute;
+        top: 88vh;
+        left: 44%;
+        font-size: 2em;
+        cursor: pointer;
+        &:hover{
+            background-color: color("black");
+            color: color("white");
+            box-shadow: color("white") 2px 2px 4px;
+        }
+    }
     header{
         position: fixed;
         display: flex;
@@ -83,7 +102,7 @@ body{
     main{
         height: 100%;
         text-align: center;
-        padding-top: 12vh;
+        padding-top: 18vh;
         z-index: 10;
         .center{
             margin: 0 auto 6vw auto;
@@ -91,7 +110,7 @@ body{
             height: auto;
             color: color("black");
             .first-name{
-                font-size: 18vw;
+                font-size: 29vh;
                 letter-spacing: 3px;
                 height: auto;
                 padding: 0;
@@ -100,11 +119,11 @@ body{
 
             }
             .mid-bar{
-                font-size: 2.5vw;
+                font-size: 4vh;
                 color: color("black");
                 border-radius: 2rem;
                 background-color: white;
-                width: 55vw;
+                width: 50vw;
                 padding: 1px 0 1vh 0;
                 margin: auto;
                 flex-direction: row;
@@ -122,7 +141,7 @@ body{
                 }
             }
             .last-name{
-                font-size: 18vw;
+                font-size: 29vh;
                 letter-spacing: 2px;
                 height: auto;
                 padding: 0;
@@ -143,21 +162,19 @@ body{
                 display: flex;
                 justify-content: space-between;
                 margin: auto;
-                gap: 6vw;
                 width: 90%;
                 img{
-                    width: 26vw;
-                    height: 34vw;
-                    object-fit: cover;
+                    width: 30vw !important;
+                    height: 40vw;
                 }
-                #cert-img1{
-                    
+                :nth-child(1){
+                    padding: 0 30vw 0 30vw;
                 }
-                #cert-img2{
-
+                :nth-child(2){
+                    padding: 0 30vw 0 40vw;
                 }
-                #cert-img3{
-
+                :nth-child(3){
+                    padding: 0 30vw 0 40vw;
                 }
             }
         }
@@ -165,7 +182,7 @@ body{
             display: flex;
             flex-direction: column;
             height: auto;
-            margin: 14vh 0 24vh 0;
+            margin: 30vh 0 24vh 0;
             font-family: skatone;
             .accordion-items {
                 transition: 1s;
@@ -398,7 +415,37 @@ body{
 }
 
 @media (orientation: portrait) {
-    main{
-        padding-top: 20vh;
+    body{
+        main{
+            padding-top: 17vh;
+            .center{
+                .first-name, .last-name{
+                    font-size: 28vw;
+                }
+                .mid-bar{
+
+                }
+            }
+            .swiper{
+                padding: 10vh 0 10vh 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    body{
+        main{
+            padding-top: 30vh;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        main{
+            padding-top: 36vh;
+            .center{
+                margin-bottom: 8vw;
+            }
+        }
     }
 }

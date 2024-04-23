@@ -26,7 +26,8 @@ $( function() {
 
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
-        loop: true, 
+        loop: true,
+        slides: 3,
 
         navigation: {
             nextEl: '.swiper-button-next',
