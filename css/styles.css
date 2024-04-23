@@ -1,6 +1,6 @@
 @font-face {
   font-family: skatone;
-  src: url(skatone/Skatone.ttf);
+  src: url(/Skatone.ttf);
 }
 body {
   max-width: 100%;
